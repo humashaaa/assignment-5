@@ -8,14 +8,78 @@
     <!-- daisy ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    
 </head>
 <body>
+    <header>
+        <!-- nav -->
+        <div class="flex gap-[370px] pl-40 mt-5 items-center mb-9">
+            <h1 class="raleway-extrabold ml-11">P-Ticket</h1>
+            <ul class="text-gray-600 flex gap-8">
+                <li>Home</li>
+                <li>About</li>
+                <li>Destination</li>
+                <li>Search</li>
+            </ul>
+            <button class="btn bg-green-200 text-green-500">Bus<img src="./images/bus-icon.png" alt=""></button>
+        </div>
+    </header>
     <main>
+        <!-- banner -->
+        <div class=" hidden bg-[url(images/banner.png)] bg-no-repeat min-h-screen text-center pt-16 ml-48 space-y-9">
+            <h1 class="raleway-extrabold text-white text-6xl">End-to-End Travel with <br><span class="text-green-600">P Paribahan</span></h1>
+            <p class="text-white">P Paribahan is premium online booking portal which allows you to purchase ticket for various bus services across the country</p>
+            <button class="btn bg-green-400 border-none">Buy Tickets</button>
+        </div>
+        <div class="text-center space-y-3 mb-10">
+            <h1 class="raleway-bold text-4xl">P.H Paribahan</h1>
+            <p class="text-gray-600 text-lg">P Paribahan is premium online booking portal which allows you to purchase ticket for various bus services across the country</p>
+
+        </div>
+        <!-- greenline paribahan -->
+        <section class="flex justify-around ">
+            <div>
+            <div class="flex items-center gap-20">
+                <div class="gap-5 flex items-center">
+                <img src="./images/bus-logo.png" alt="">
+                <div>
+                    <h1 class="raleway-bold text-3xl">Greenline Paribahan</h1>
+                    <h3 class=" text-gray-600 text-lg">Coach-009-WEB ! AC_Business</h3>
+                </div>
+            </div>
+                <button class="items-center bg-green-200 btn btn-wide border-none text-green-500 text-lg"><img src="./images/seat-green.png" alt=""> <span>0</span> Seats left</button>
+            </div>
+            <div class="artboard artboard-horizontal phone-4 rounded-2xl space-y-10 pt-10 bg-gray-100 p-11">
+                <div class="flex items-center justify-between">
+                    <h4 class="text-xl text-gray-600">Route</h4>
+                    <h4 class="text-xl">Dhaka - Sylhet</h4>
+                </div>
+                <hr class="text-gray-950 border-dotted">
+                <div class="flex items-center justify-between">
+                    <h4 class="text-xl text-gray-600">Departure Time</h4>
+                    <h4 class="text-xl">9:00 PM</h4>
+                </div>
+                <hr class="text-gray-950 border-dotted">
+                <div class="flex justify-around items-center gap-2">
+                    <button class="btn btn-wide text-base bg-gray-300">Boarding Point - Laxmipur</button>
+                    <button class="btn btn-wide text-base bg-gray-300">Dropping Point - Bogura</button>
+                    <button class="btn btn-wide text-base bg-gray-300">Est. Time - 11 Hour
+
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div><img src="./images/info-devider.png" alt=""></div>
+            <div class="items-center pt-32">
+                <img src="./images/fare.png" alt="">
+                <h1 class="text-3xl railway-bold">550 Taka</h1>
+                <h2 class="text-2xl text-gray-600 inter-semibold">Per Seat</h2>
+            </div>
+        </section>
 
     </main>
     <footer>
-        
+
     </footer>
 
     <script src="./script.js"></script>
