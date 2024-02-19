@@ -27,14 +27,14 @@
     <main>
         <!-- first page -->
         <!-- banner -->
-        <div class="  bg-[url(images/banner.png)] bg-no-repeat min-h-screen text-center pt-16 ml-48 space-y-9">
+        <div id="home-screen" class="  bg-[url(images/banner.png)] bg-no-repeat min-h-screen text-center pt-16 ml-48 space-y-9">
             <h1 class="raleway-extrabold text-white text-6xl">End-to-End Travel with <br><span class="text-green-500">P Paribahan</span></h1>
             <p class="text-white">P Paribahan is premium online booking portal which allows you to purchase ticket for various bus services across the country</p>
-            <button class="btn bg-green-400 border-none">Buy Tickets</button>
+            <button onclick="getStarted()" class="btn bg-green-400 border-none">Buy Tickets</button>
         </div>
 
         <!-- 2nd page -->
-        <section class="hidden">
+        <section id="second-page" class="hidden">
 
         <div class="text-center space-y-3 mb-10">
             <h1 class="raleway-bold text-4xl">P.H Paribahan</h1>
@@ -52,7 +52,7 @@
                     <h3 class=" text-gray-600 text-lg">Coach-009-WEB ! AC_Business</h3>
                 </div>
             </div>
-                <button class="items-center bg-green-200 btn btn-wide border-none text-green-500 text-lg"><img src="./images/seat-green.png" alt=""> <span>40</span> Seats left</button>
+                <button class="items-center bg-green-200 btn btn-wide border-none text-green-500 text-lg"><img src="./images/seat-green.png" alt=""> <span id="seat-left">40</span> Seats left</button>
             </div>
             <div class="artboard artboard-horizontal phone-4 rounded-2xl space-y-10 pt-10 bg-gray-100 p-11">
                 <div class="flex items-center justify-between">
@@ -107,82 +107,82 @@
                     <!-- A -->
                     <div class="flex justify-around gap-12 items-center">
                         <p class="text-gray-500 inter-medium">A</p>
-                        <button class="btn w-20 text-gray-500 inter-medium">A1</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">A2</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">A3</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">A4</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">A1</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">A2</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">A3</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">A4</button>
                     </div>
                     <!-- B -->
                     <div class="flex justify-around gap-12  items-center">
                         <p class="text-gray-500 inter-medium">B</p>
-                        <button class="btn w-20 text-gray-500 inter-medium">B1</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">B2</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">B3</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">B4</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">B1</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">B2</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">B3</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">B4</button>
                     </div>
                     <!-- C -->
                     <div class="flex justify-around gap-12 items-center">
                         <p class="text-gray-500 inter-medium">C</p>
-                        <button class="btn w-20 text-gray-500 inter-medium">C1</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">C2</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">C3</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">C4</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">C1</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">C2</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">C3</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">C4</button>
                     </div>
                     <!-- D -->
                     <div class="flex justify-around gap-12 items-center">
                         <p class="text-gray-500 inter-medium">D</p>
-                        <button class="btn w-20 text-gray-500 inter-medium">D1</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">D2</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">D3</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">D4</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">D1</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">D2</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">D3</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">D4</button>
                     </div>
                     <!-- E -->
                     <div class="flex justify-around gap-12 items-center">
                         <p class="text-gray-500 inter-medium">E</p>
-                        <button class="btn w-20 text-gray-500 inter-medium">E1</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">E2</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">E3</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">E4</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">E1</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">E2</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">E3</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">E4</button>
                     </div>
                     <!-- F -->
                     <div class="flex justify-around gap-12 items-center">
                         <p class="text-gray-500 inter-medium">F</p>
-                        <button class="btn w-20 text-gray-500 inter-medium">F1</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">F2</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">F3</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">F4</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">F1</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">F2</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">F3</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">F4</button>
                     </div>
                     <!-- G -->
                     <div class="flex justify-around gap-12 items-center">
                         <p class="text-gray-500 inter-medium">G</p>
-                        <button class="btn w-20 text-gray-500 inter-medium">G1</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">G2</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">G3</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">G4</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">G1</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">G2</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">G3</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">G4</button>
                     </div>
                     <!-- H -->
                     <div class="flex justify-around gap-12  items-center">
                         <p class="text-gray-500 inter-medium">H</p>
-                        <button class="btn w-20 text-gray-500 inter-medium">H1</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">H2</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">H3</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">H4</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">H1</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">H2</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">H3</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">H4</button>
                     </div>
                     <!-- I -->
                     <div class="flex justify-around gap-12  items-center">
                         <p class="text-gray-500 inter-medium">I</p>
-                        <button class="btn w-20 text-gray-500 inter-medium">I1</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">I2</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">I3</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">I4</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">I1</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">I2</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">I3</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">I4</button>
                     </div>
                     <!-- J -->
                     <div class="flex justify-around gap-12 items-center">
                         <p class="text-gray-500 inter-medium">J</p>
-                        <button class="btn w-20 text-gray-500 inter-medium">J1</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">J2</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">J3</button>
-                        <button class="btn w-20 text-gray-500 inter-medium">J4</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">J1</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">J2</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">J3</button>
+                        <button class="add-btn btn w-20 text-gray-500 inter-medium">J4</button>
                     </div>
                 </div>
                 <!-- btn ends -->
@@ -190,7 +190,6 @@
             </div>
             <!-- info devider -->
             <div class="border-r-2 border-dashed">
-                <!-- <img class="min-h-full" src="./images/info-devider.png" alt=""> -->
                 
             </div>
             <!-- select seat info -->
@@ -200,37 +199,38 @@
                 <!-- seat class -->
                 <div class="bg-gray-100 space-y-4 rounded-xl p-6">
                     <div class="flex text-base inter-semibold gap-40">
-                        <h3>Seat<span></span></h3>
+                        <div class="flex items-center">
+                        <h3>Seat</h3>
+                        <button class="btn btn-xs bg-green-300 text-white"><span id="ticket-count">0</span></button>
+                        </div>
                         <h3>Class</h3>
                         <h3>Price</h3>
                     </div>
                     <hr class="text-gray-950 border-dotted">
-                    <div class="flex text-base inter-medium text-gray-400 gap-40">
-                        <h3>C2</h3>
-                        <h3>Economoy</h3>
-                        <h3>550</h3>
-                    </div>
-                    
-                    <div class="flex text-base inter-medium text-gray-400 gap-40">
-                        <h3>C2</h3>
-                        <h3>Economoy</h3>
-                        <h3>550</h3>
-                    </div>
+
+                    <div id="selected-ticket-container">
+
+                      </div>
                     <hr>
                     <!-- total price -->
                     <div class="flex text-base inter-semibold gap-40 justify-between">
-                        <p>Total Price</p>
-                        <p>BDT <span>0</span></p>
+                        <p >Total Price</p>
+                        <p>BDT <span id="total-price" >0</span></p>
                     </div>
                     <!-- coupon -->
-                    <label class="input input-bordered flex items-center gap-2">
-                        <input type="text" class="grow border-none" placeholder="Have any coupon?" />
-                        <span class="badge badge-info btn bg-green-400 text-white">Apply</span>
+                    <label class="input input-bordered flex items-center gap-2" id="input">
+                        <input id="input-field" type="text" class="grow border-none" placeholder="Have any coupon?" />
+                        <span class="badge badge-info btn bg-green-400 text-white" id="apply-btn">Apply</span>
                       </label>
+                      
+                      <div id="discount-price" class="hidden flex text-base inter-semibold gap-40 justify-between ">
+                        <p>Discount Price</p>
+                        <p>BDT <span id="discount-amount">0</span></p>
+                      </div>
                       <div class="flex text-base inter-semibold gap-40 justify-between">
                         <p>Grand Total</p>
-                        <p>BDT <span>0</span></p>
-                    </div>
+                        <p>BDT <span id="grand-total">0</span></p>
+                      </div>
                 </div>
                 <!-- grand total ends up-->
                          <div class="mt-10 space-y-4">
@@ -246,7 +246,7 @@
                             <h2 class="inter-semibold">Email ID</h2>
                             <input type="email" placeholder="Enter your email id" class="input input-bordered w-full max-w-xs" />
                          </div>
-                         <button class="btn btn-wide bg-green-400 text-white mt-5 w-3/4">Next</button>
+                         <button onclick="nextBtn()" class="btn btn-wide bg-green-400 text-white mt-5 w-3/4">Next</button>
                          <div class="flex items-center justify-between mt-6">
                             <a class="link text-gray-500">Terms and Conditions</a>
                             <a class="link text-gray-500">Cancellation Policy</a>
@@ -257,7 +257,7 @@
     </section>
 
     <!-- 3rd page -->
-    <section class="hidden">
+    <section id="third-page" class="hidden">
         <div class="text-center space-y-3 mt-24">
             <div class="flex items-center justify-center">
                 <img class="" src="./images/success.png" alt="">
@@ -267,7 +267,7 @@
             <p class="raleway-medium text-xl ">Thank you for Booking Our Bus Seats.</p>
             <p class="raleway-medium text-xl">We are working hard to find the best service and deals for you. </p>
             <p>Shortly you will find a confirmation in your email.</p>
-            <button class="btn bg-green-400 text-base rounded-full text-white btn-wide">Continue</button>
+            <button onclick="continueBtn()" class="btn bg-green-400 text-base rounded-full text-white btn-wide">Continue</button>
         </div>
     </section>
 
@@ -303,5 +303,6 @@
     </footer>
 
     <script src="./script.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
