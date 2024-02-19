@@ -1,23 +1,3 @@
-// function continueGame(){
-//     const alphabet = getAlphabet();
-//    //  show the random alphabet on ui (use innerText)
-//    const gameAlphabet = document.getElementById('game')
-//    gameAlphabet.innerText = alphabet;
-
-// }
-
-// function play(){
-//    // step-1: hide home screen
-//    const homeScreen = document.getElementById('home');
-//    homeScreen.classList.add("hidden");
-//    // step -2: show playground
-//    const playScreen = document.getElementById('play-ground');
-//    playScreen.classList.remove("hidden")
-
-//    // start the game
-//    continueGame()
-// }
-
 function getStarted(){
     // hide homescreen
     const homeScreen = document.getElementById('home-screen');

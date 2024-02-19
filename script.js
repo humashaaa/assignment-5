@@ -1,11 +1,3 @@
-//tasks-
-
-// 2.  and grand total price jog hobe
-// bonus-
-// 4 tar beshi kew select korte parbe na, korle alert dekhate hobe
-// new 15 hole grand total price e 15 % discount hobe
-// couple 20 dile 20% discount
-
 const allBtn = document.getElementsByClassName('add-btn');
 
 let count = 0;
@@ -65,14 +57,12 @@ for(const btn of allBtn){
     counter = counter + 1;
     console.log(counter);
 
-    if(counter <= 4){
-        const discountAmount = document.getElementById('discount-amount');
-            sum = sum *0.15;
+    if(couponCode === "NEW15" ){
+         const discountAmount = document.getElementById('discount-amount');
+             const amount = sum * 0.15;
 
-            discountAmount.innerText = sum;
+             discountAmount.innerText = amount;
             return;
-        
-            console.log( )
         }
         else{
             e.target.setAttribute('disable', true);
@@ -89,11 +79,13 @@ for(const btn of allBtn){
     const couponElement = document.getElementById('input-field');
     const couponCode = couponElement.value;
     
-        if(couponCode === "NEW15" ){
+        if(couponCode === "NEW15" || couponCode === "Couple 20" ){
             const inputDiscount = document.getElementById('input');
             inputDiscount.classList.add("hidden");
             const discountPrice = document.getElementById('discount-price');
             discountPrice.classList.remove('hidden');
+
+            
            }
         else{
           alert('Invalid coupon')
